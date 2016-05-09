@@ -402,7 +402,7 @@ This list contains the placeholders that need to be replaced before deploying an
                  xmlns="http://schemas.microsoft.com/2011/01/fabric">
 		<Parameters>
 			<Parameter Name="EventProcessorHostService_InstanceCount" 
-                       Value="1" />
+                       Value="-1" />
 			<Parameter Name="EventProcessorHostService_SqlDatabaseConnectionString" 
                        Value="[SqlDatabaseConnectionString]" />
 			<Parameter Name="EventProcessorHostService_InsertStoredProcedure" 
@@ -435,7 +435,7 @@ This list contains the placeholders that need to be replaced before deploying an
                  xmlns="http://schemas.microsoft.com/2011/01/fabric">
 		<Parameters>
 			<Parameter Name="EventProcessorHostService_InstanceCount" 
-                       Value="1" />
+                       Value="-1" />
 			<Parameter Name="EventProcessorHostService_SqlDatabaseConnectionString" 
                        Value="[SqlDatabaseConnectionString]" />
 			<Parameter Name="EventProcessorHostService_InsertStoredProcedure" 
