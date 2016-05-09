@@ -1,0 +1,15 @@
+{
+    "id": "AndersenFamily",
+    "lastName": "Andersen",
+    "parents": [
+        { "firstName": "Thomas" },
+        { "firstName": "Mary Kay" }
+    ],
+    "children": [
+        { "firstName": "John", "gender": "male", "grade": 7 }
+    ],
+    "pets": [
+        { "givenName": "Fluffy" }
+    ],
+    "address": { "country": "USA", "state": "WA", "city": "Seattle" }
+}

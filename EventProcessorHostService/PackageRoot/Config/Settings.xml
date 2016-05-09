@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Settings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+  <!-- EventProcessorHost connection strings -->
+  <Section Name="EventProcessorHostConfig">
+    <Parameter Name="SqlDatabaseConnectionString" Value="" />
+    <Parameter Name="InsertStoredProcedure" Value="sp_InsertJsonEvents"/>
+    <Parameter Name="StorageAccountConnectionString" Value="" />
+    <Parameter Name="ServiceBusConnectionString" Value="" />
+    <Parameter Name="EventHubName" Value="" />
+    <Parameter Name="ConsumerGroupName" Value="" />
+    <Parameter Name="CheckpointCount" Value="100"/>
+    <Parameter Name="MaxRetryCount" Value="3" />
+    <Parameter Name="BackoffDelay" Value="1" />
+  </Section>
+</Settings>

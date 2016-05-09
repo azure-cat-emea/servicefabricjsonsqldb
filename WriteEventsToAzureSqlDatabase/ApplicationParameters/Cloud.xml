@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Application xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Name="fabric:/WriteEventsToSql" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+   <Parameters>
+      <Parameter Name="EventProcessorHostService_InstanceCount" Value="-1" />
+      <Parameter Name="EventProcessorHostService_SqlDatabaseConnectionString" Value="[SqlDatabaseConnectionString]" />
+      <Parameter Name="EventProcessorHostService_InsertStoredProcedure" Value="[InsertStoredProcedure]" />
+      <Parameter Name="EventProcessorHostService_StorageAccountConnectionString" Value="[StorageAccountConnectionString]" />
+      <Parameter Name="EventProcessorHostService_ServiceBusConnectionString" Value="[ServiceBusConnectionString]" />
+      <Parameter Name="EventProcessorHostService_EventHubName" Value="[EventHubName]" />
+      <Parameter Name="EventProcessorHostService_ConsumerGroupName" Value="[ConsumerGroupName]" />
+      <Parameter Name="EventProcessorHostService_MaxRetryCount" Value="3" />
+      <Parameter Name="EventProcessorHostService_CheckpointCount" Value="1" />
+      <Parameter Name="EventProcessorHostService_BackoffDelay" Value="1" />
+   </Parameters>
+</Application>

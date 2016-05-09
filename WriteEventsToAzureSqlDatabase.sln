@@ -1,0 +1,83 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{4F0FD25C-509B-4A4A-894A-8EDF463626A7}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\CreateIoTDb.sql = Scripts\CreateIoTDb.sql
+		Scripts\Sample.sql = Scripts\Sample.sql
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{3F906317-6F74-4B9F-B31E-355CEF7B6D41}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeviceSimulator", "Sender\DeviceSimulator.csproj", "{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{0FDFF587-EBBD-40B5-9842-D450CAA3973A}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "WriteEventsToAzureSqlDatabase", "WriteEventsToAzureSqlDatabase\WriteEventsToAzureSqlDatabase.sfproj", "{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EventProcessorHostService", "EventProcessorHostService\EventProcessorHostService.csproj", "{6276960B-556C-453E-93DB-ED267A477664}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Documents", "Documents", "{4654D522-79DA-469D-B864-D1D80A4996F8}"
+	ProjectSection(SolutionItems) = preProject
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE = LICENSE
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Images", "Images", "{4DE78F7A-A2B9-4DB2-BBB5-33DD4F753946}"
+	ProjectSection(SolutionItems) = preProject
+		Images\Architecture.png = Images\Architecture.png
+		Images\Client.png = Images\Client.png
+		Images\Trace.png = Images\Trace.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Debug|x64.Build.0 = Debug|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Release|x64.ActiveCfg = Release|Any CPU
+		{3D6F33A1-2C1C-4B41-AEE5-1EBA0E4CADEB}.Release|x64.Build.0 = Release|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Debug|x64.Build.0 = Debug|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Release|x64.ActiveCfg = Release|Any CPU
+		{0FDFF587-EBBD-40B5-9842-D450CAA3973A}.Release|x64.Build.0 = Release|Any CPU
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Debug|x64.ActiveCfg = Debug|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Debug|x64.Build.0 = Debug|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Debug|x64.Deploy.0 = Debug|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Release|Any CPU.ActiveCfg = Release|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Release|x64.ActiveCfg = Release|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Release|x64.Build.0 = Release|x64
+		{D4663F5C-85D2-459B-9E7A-DA113BDAE64A}.Release|x64.Deploy.0 = Release|x64
+		{6276960B-556C-453E-93DB-ED267A477664}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{6276960B-556C-453E-93DB-ED267A477664}.Debug|x64.ActiveCfg = Debug|x64
+		{6276960B-556C-453E-93DB-ED267A477664}.Debug|x64.Build.0 = Debug|x64
+		{6276960B-556C-453E-93DB-ED267A477664}.Release|Any CPU.ActiveCfg = Release|x64
+		{6276960B-556C-453E-93DB-ED267A477664}.Release|x64.ActiveCfg = Release|x64
+		{6276960B-556C-453E-93DB-ED267A477664}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

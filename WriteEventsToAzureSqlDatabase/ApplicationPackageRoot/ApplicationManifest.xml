@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ApplicationManifest xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ApplicationTypeName="WriteEventsToSqlType" ApplicationTypeVersion="1.0.0" xmlns="http://schemas.microsoft.com/2011/01/fabric">
+   <Parameters>
+      <Parameter Name="EventProcessorHostService_InstanceCount" DefaultValue="-1" />
+      <Parameter Name="EventProcessorHostService_SqlDatabaseConnectionString" DefaultValue="" />
+      <Parameter Name="EventProcessorHostService_InsertStoredProcedure" DefaultValue="sp_InsertJsonEvents" />
+      <Parameter Name="EventProcessorHostService_StorageAccountConnectionString" DefaultValue="" />
+      <Parameter Name="EventProcessorHostService_ServiceBusConnectionString" DefaultValue="" />
+      <Parameter Name="EventProcessorHostService_EventHubName" DefaultValue="" />
+      <Parameter Name="EventProcessorHostService_ConsumerGroupName" DefaultValue="" />
+      <Parameter Name="EventProcessorHostService_MaxRetryCount" DefaultValue="3" />
+      <Parameter Name="EventProcessorHostService_CheckpointCount" DefaultValue="100" />
+      <Parameter Name="EventProcessorHostService_BackoffDelay" DefaultValue="1" />
+   </Parameters>
+   <ServiceManifestImport>
+      <ServiceManifestRef ServiceManifestName="EventProcessorHostServicePkg" ServiceManifestVersion="1.0.0" />
+      <ConfigOverrides>
+         <ConfigOverride Name="Config">
+            <Settings>
+               <Section Name="EventProcessorHostConfig">
+                  <Parameter Name="SqlDatabaseConnectionString" Value="[EventProcessorHostService_SqlDatabaseConnectionString]" />
+                  <Parameter Name="InsertStoredProcedure" Value="[EventProcessorHostService_InsertStoredProcedure]" />
+                  <Parameter Name="StorageAccountConnectionString" Value="[EventProcessorHostService_StorageAccountConnectionString]" />
+                  <Parameter Name="ServiceBusConnectionString" Value="[EventProcessorHostService_ServiceBusConnectionString]" />
+                  <Parameter Name="EventHubName" Value="[EventProcessorHostService_EventHubName]" />
+                  <Parameter Name="ConsumerGroupName" Value="[EventProcessorHostService_ConsumerGroupName]" />
+                  <Parameter Name="CheckpointCount" Value="[EventProcessorHostService_CheckpointCount]" />
+                  <Parameter Name="MaxRetryCount" Value="[EventProcessorHostService_MaxRetryCount]" />
+                  <Parameter Name="BackoffDelay" Value="[EventProcessorHostService_BackoffDelay]" />
+               </Section>
+            </Settings>
+         </ConfigOverride>
+      </ConfigOverrides>
+   </ServiceManifestImport>
+   <DefaultServices>
+      <Service Name="EventProcessorHostService">
+         <StatelessService ServiceTypeName="EventProcessorHostServiceType" InstanceCount="[EventProcessorHostService_InstanceCount]">
+            <SingletonPartition />
+         </StatelessService>
+      </Service>
+   </DefaultServices>
+</ApplicationManifest>
