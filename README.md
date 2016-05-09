@@ -371,7 +371,7 @@ The following table contains the code of the **EventProcessor** class. In partic
 
 The **EventProcessor** class uses the **ServiceEventSource** class to generate ETW events. You can use Service Fabric tooling in Visual Studio to see streaming traces, as shown in the picture below.
 
-[TODO INSERT IMG LINK]
+![](https://raw.githubusercontent.com/azure-cat-emea/servicefabricjsonsqldb/master/Images/Trace.png)
 
 # Application Configuration #
 Make sure to replace the following placeholders in the project files below before deploying and testing the application on the local development Service Fabric cluster or before deploying the application to your Service Fabric cluster on Microsoft Azure.
@@ -526,7 +526,7 @@ This list contains the placeholders that need to be replaced before deploying an
 
 This application can be used to provision the **Event Hub** and simulate a configurable amount of devices.
 
-![](https://raw.githubusercontent.com/azure-cat-emea/servicefabricjsonsqldb/master/Images/client.png)
+![](https://raw.githubusercontent.com/azure-cat-emea/servicefabricjsonsqldb/master/Images/Client.png)
 
 The following table shows the configuration file of the application. Make sure to substitute the placeholders with the expected information before running the application.
 
